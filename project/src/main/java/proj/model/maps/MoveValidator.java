@@ -1,4 +1,6 @@
-package proj.util;
+package proj.model.maps;
+
+import proj.util.Vector2d;
 
 public interface MoveValidator {
 

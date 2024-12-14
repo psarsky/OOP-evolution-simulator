@@ -2,7 +2,7 @@ package proj.model.elements;
 
 import proj.util.MapDirection;
 import proj.util.MoveDirection;
-import proj.util.MoveValidator;
+import proj.model.maps.MoveValidator;
 import proj.util.Vector2d;
 
 public class Animal implements WorldElement {
