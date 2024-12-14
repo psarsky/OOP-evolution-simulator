@@ -1,7 +1,8 @@
-package proj.model;
+package proj.model.maps;
 
-import proj.util.Boundary;
-import proj.util.IncorrectPositionException;
+import proj.model.elements.Animal;
+import proj.model.elements.WorldElement;
+import proj.util.*;
 
 import java.util.List;
 import java.util.UUID;

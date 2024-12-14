@@ -1,7 +1,12 @@
-package proj.model;
+package proj.model.maps;
 
+import proj.model.elements.Animal;
+import proj.model.elements.WorldElement;
+import proj.presenter.MapChangeListener;
 import proj.util.IncorrectPositionException;
 import proj.util.MapVisualizer;
+import proj.util.MoveDirection;
+import proj.util.Vector2d;
 
 import java.util.*;
 

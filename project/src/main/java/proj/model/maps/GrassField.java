@@ -1,5 +1,8 @@
-package proj.model;
+package proj.model.maps;
 
+import proj.model.elements.Grass;
+import proj.util.Vector2d;
+import proj.model.elements.WorldElement;
 import proj.util.Boundary;
 import proj.util.RandomPositionGenerator;
 
@@ -40,8 +43,8 @@ public class GrassField extends AbstractWorldMap {
 
     @Override
     public Boundary getCurrentBounds() {
-        Vector2d ur = new Vector2d(lowerLeft.getX(), lowerLeft.getY());
-        Vector2d ll = new Vector2d(upperRight.getX(), upperRight.getY());
+        Vector2d ur = new Vector2d(lowerLeft.x(), lowerLeft.y());
+        Vector2d ll = new Vector2d(upperRight.x(), upperRight.y());
 
         for (WorldElement we : getElements()) {
             ur = ur.upperRight(we.getPos());

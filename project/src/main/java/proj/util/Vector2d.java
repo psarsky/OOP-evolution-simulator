@@ -1,16 +1,6 @@
-package proj.model;
+package proj.util;
 
-import java.util.Objects;
-
-public class Vector2d {
-
-    private final int x;
-    private final int y;
-
-    public Vector2d(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
+public record Vector2d(int x, int y) {
 
     public boolean precedes(Vector2d other) {
         return x <= other.x && y <= other.y;
@@ -45,25 +35,4 @@ public class Vector2d {
         return "(" + x + ", " + y + ")";
     }
 
-    @Override
-    public boolean equals(Object other) {
-        if (this == other) return true;
-        if (other == null || getClass() != other.getClass()) return false;
-
-        Vector2d that = (Vector2d) other;
-        return x == that.x && y == that.y;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
 }

@@ -1,4 +1,6 @@
-package proj.model;
+package proj.presenter;
+
+import proj.model.maps.WorldMap;
 
 public class ConsoleMapDisplay implements MapChangeListener {
     private int count = 0;

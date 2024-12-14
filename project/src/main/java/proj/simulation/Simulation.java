@@ -1,9 +1,9 @@
-package proj;
+package proj.simulation;
 
-import proj.model.Animal;
-import proj.model.MoveDirection;
-import proj.model.Vector2d;
-import proj.model.WorldMap;
+import proj.model.elements.Animal;
+import proj.util.MoveDirection;
+import proj.util.Vector2d;
+import proj.model.maps.WorldMap;
 import proj.util.IncorrectPositionException;
 
 import java.util.ArrayList;

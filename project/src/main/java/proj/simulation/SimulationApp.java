@@ -1,4 +1,4 @@
-package proj;
+package proj.simulation;
 
 import proj.presenter.SimulationPresenter;
 import javafx.application.Application;

@@ -1,5 +1,6 @@
-package proj.model;
+package proj.model.maps;
 
+import proj.util.Vector2d;
 import proj.util.Boundary;
 
 public class RectangularMap extends AbstractWorldMap {

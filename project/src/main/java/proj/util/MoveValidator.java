@@ -1,4 +1,4 @@
-package proj.model;
+package proj.util;
 
 public interface MoveValidator {
 

@@ -1,6 +1,4 @@
-package proj;
-
-import proj.model.MoveDirection;
+package proj.util;
 
 import java.util.ArrayList;
 import java.util.List;

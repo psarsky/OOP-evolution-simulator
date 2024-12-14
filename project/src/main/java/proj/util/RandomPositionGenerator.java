@@ -1,7 +1,5 @@
 package proj.util;
 
-import proj.model.Vector2d;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

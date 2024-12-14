@@ -1,8 +1,7 @@
 package proj.presenter;
 
-import proj.Simulation;
-import proj.SimulationEngine;
-import proj.model.*;
+import proj.simulation.Simulation;
+import proj.simulation.SimulationEngine;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
@@ -11,11 +10,16 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
+import proj.model.maps.AbstractWorldMap;
+import proj.model.maps.GrassField;
+import proj.model.maps.WorldMap;
+import proj.util.MoveDirection;
+import proj.util.Vector2d;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static proj.OptionsParser.parse;
+import static proj.util.OptionsParser.parse;
 
 public class SimulationPresenter implements MapChangeListener {
     @FXML
@@ -51,10 +55,10 @@ public class SimulationPresenter implements MapChangeListener {
     }
 
     public void drawMap() {
-        int boundTop = map.getCurrentBounds().upperRight().getY();
-        int boundBottom = map.getCurrentBounds().lowerLeft().getY();
-        int boundRight = map.getCurrentBounds().upperRight().getX();
-        int boundLeft = map.getCurrentBounds().lowerLeft().getX();
+        int boundTop = map.getCurrentBounds().upperRight().y();
+        int boundBottom = map.getCurrentBounds().lowerLeft().y();
+        int boundRight = map.getCurrentBounds().upperRight().x();
+        int boundLeft = map.getCurrentBounds().lowerLeft().x();
         int mapWidth = boundRight - boundLeft + 1;
         int mapHeight = boundTop - boundBottom + 1;
         int gridWidth = 400;

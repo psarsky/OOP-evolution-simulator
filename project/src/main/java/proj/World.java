@@ -1,12 +1,18 @@
 package proj;
 
-
-import proj.model.*;
+import proj.model.maps.AbstractWorldMap;
+import proj.model.maps.GrassField;
+import proj.model.maps.RectangularMap;
+import proj.presenter.ConsoleMapDisplay;
+import proj.simulation.Simulation;
+import proj.simulation.SimulationEngine;
+import proj.util.MoveDirection;
+import proj.util.Vector2d;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static proj.OptionsParser.parse;
+import static proj.util.OptionsParser.parse;
 
 public class World {
     public static void main(String[] args) {
